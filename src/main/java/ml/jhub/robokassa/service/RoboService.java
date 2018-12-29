@@ -18,7 +18,7 @@ import java.security.NoSuchAlgorithmException;
  * @author igor.ch
  *
  */
-public abstract class RoboService {
+public class RoboService {
 
     public String mrchLogin;
     private OperationServiceProvider provider;
