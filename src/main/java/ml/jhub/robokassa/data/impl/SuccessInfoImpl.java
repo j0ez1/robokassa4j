@@ -4,7 +4,7 @@ import ml.jhub.robokassa.data.interfaces.SuccessInfo;
 
 public class SuccessInfoImpl extends ResultInfoImpl implements SuccessInfo {
 
-    CultureInfoImpl cultureInfo = new CultureInfoImpl();
+    private CultureInfoImpl cultureInfo = new CultureInfoImpl();
 
     @Override
     public String getCulture() {

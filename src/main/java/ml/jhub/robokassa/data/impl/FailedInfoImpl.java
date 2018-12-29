@@ -4,7 +4,7 @@ import ml.jhub.robokassa.data.interfaces.FailedInfo;
 
 public class FailedInfoImpl extends PaymentInfoImpl implements FailedInfo {
 
-    CultureInfoImpl culture = new CultureInfoImpl();
+    private CultureInfoImpl culture = new CultureInfoImpl();
 
     @Override
     public String getCulture() {

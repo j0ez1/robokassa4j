@@ -4,14 +4,14 @@ import ml.jhub.robokassa.data.interfaces.CultureInfo;
 
 public class CultureInfoImpl implements CultureInfo {
 
-    private String сulture;
+    private String culture;
 
     @Override
     public String getCulture() {
-        return сulture;
+        return culture;
     }
 
     public void setCulture(String sCulture) {
-        this.сulture = sCulture;
+        this.culture = sCulture;
     }
 }
