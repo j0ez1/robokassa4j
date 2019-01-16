@@ -52,4 +52,5 @@ public interface ResultInfo extends PaymentInfo {
      */
     String getSignatureValue();
 
+    void setSignatureValue(String sSignatureValue);
 }

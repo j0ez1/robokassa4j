@@ -11,6 +11,7 @@ public class ResultInfoImpl extends PaymentInfoImpl implements ResultInfo {
         return signatureValue;
     }
 
+    @Override
     public void setSignatureValue(String sSignatureValue) {
         this.signatureValue = sSignatureValue;
     }

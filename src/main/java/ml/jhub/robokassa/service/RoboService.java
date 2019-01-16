@@ -91,6 +91,7 @@ public class RoboService {
         try {
             int invoceId = provider.createOperation(Double.parseDouble(sum));
             RequestData data = requestFactory.create(invoceId, getMrchLogin(), sum, getCulture(), getCurrency(), getDescription());
+            data.setSignatureValue(getRequestSignature(sum, invoceId));
             //new RequestDataImpl();
 			/*
 			 * 
@@ -199,9 +200,9 @@ public class RoboService {
     /**
      * Метод должен быть использован на resultUrl для подтверждения оплаты
      *
-     * @param data Данные которые пришли с сервера Robocassa
+     * @param data Данные которые пришли с сервера Robokassa
      * @throws NoSuchAlgorithmException
-     * @returnстроку подтверждения или ошибку
+     * @return строку подтверждения или ошибку
      */
     public String сonfirm(ResultInfo data) {
 
