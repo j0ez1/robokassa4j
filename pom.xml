@@ -3,7 +3,31 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ml.jhub</groupId>
     <artifactId>robokassa4j</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
+    <packaging>jar</packaging>
+
+    <name>robokassa4j</name>
+    <description>Java package for easy integration with Robokassa gateway</description>
+    <url>https://github.com/j0ez1/robokassa4j</url>
+
+    <scm>
+        <url>https://github.com/j0ez1/robokassa4j</url>
+    </scm>
+
+    <licenses>
+        <license>
+            <name>Do What The Fuck You Want To Public License, Version 2</name>
+            <url>http://www.wtfpl.net/txt/copying/</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
@@ -16,14 +40,6 @@
             </plugin>
         </plugins>
     </build>
-    <name>robokassa4j</name>
-    <description></description>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
-    </properties>
 
     <dependencies>
         <dependency>
