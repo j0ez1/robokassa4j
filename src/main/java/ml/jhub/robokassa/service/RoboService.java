@@ -212,8 +212,7 @@ public class RoboService {
             provider.processInfo("Confirming: " + data.getInvId());
             boolean exist = provider.exist(Integer.parseInt(data.getInvId()));
             provider.processInfo("Exist: " + exist);
-            String sociomHash = getResultHash(provider.getSum(data.getInvId()),
-                    data.getInvId());
+            String sociomHash = getResultHash(data.getOutSum(), data.getInvId());
             String incomeHash = data.getSignatureValue().toUpperCase();
             provider.processInfo("sociomHash: " + sociomHash);
             provider.processInfo("incomeHash: " + incomeHash);
